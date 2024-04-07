@@ -1,0 +1,206 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:'Courier New', Courier, monospace;
+  color: rgb(25, 24, 24);
+}
+body{
+  background-color: rgb(41, 41, 52);
+  height: 100svh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  max-width: 500px;
+  width: 100vw;
+  height: 100svh;
+  background-color: rgb(255, 255, 255);
+  flex-shrink: 0;
+  position: relative;
+}
+.overview-container{
+  width: 100%;
+  height: 40%;
+  background-color: rgb(25, 24, 24);
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 35px;
+}
+h2{
+  color: white;
+  font-size: 1.2rem;
+}
+.balance-money{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.tile-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.small-tile{
+  width: 200px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+
+}
+.small-tile > .logo{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  background-color: rgba(221, 56, 56, 0.662);
+  border-radius: 100vh;
+  border:2px solid rgb(251, 53, 53);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  color: white;
+  
+}
+.money-div{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.income-heading{
+  font-size: 1rem;font-weight: 400;
+  color: rgb(56, 125, 56);
+} 
+.red{
+  color: rgb(232, 69, 69);
+}
+.income-money{
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.add-item-container{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(99, 99, 99, 0.285);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+form{
+width: 100%;
+padding: 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: rgb(252, 252, 252);
+border-radius: 15px;
+}
+form > div{
+  display: flex;
+  flex-direction: column;
+}
+input[type="text"],input[type="number"]{
+  height: 40px;
+  width: 300px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  text-indent: 10px;
+}
+.radio-div{
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.label-btn{
+  width: 100px;
+  height: 40px;
+  margin: 0 10px;
+  border: 2px solid rgb(25, 24, 24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+input[type="radio"]{
+  display: none;
+}
+input[type="radio"]:checked + label{
+  background-color: rgb(25, 24, 24);
+  color: white;
+}
+.submit-btn{
+  background-color: rgb(25, 24, 24);
+  color: white;
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+}
+.submit-btn:hover,.add-icon:hover{
+  opacity: .9;
+}
+.add-icon{
+  background-color: rgb(25, 24, 24);
+  color: white;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.transactions{
+  height: 60%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.item{
+  width: 100%;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  border-radius: 15px;
+  border: 2px solid rgb(25, 24, 24);
+}
+.item > .logo 
+{
+  margin:0 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(221, 56, 56, 0.662);
+  border-radius: 100vh;
+  border:2px solid rgb(251, 53, 53);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.green{
+  background-color: rgba(47, 220, 38, 0.544) !important;
+  border:2px solid rgb(78, 204, 71) !important;
+}
+.item > .amount{
+  margin-left: auto;
+  margin-right: 10px;
+  font-weight: 600;
+}
